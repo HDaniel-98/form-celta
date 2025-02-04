@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - RC Celta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/Css/main.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-btn-home">
+                <a class="btn-link-home" href=""><i class="icono-link"></i> VOLVER A LA WEB</a>
+            </div>
+            <div class="nav-logo">
+                <img src="/assets/logo-celta.svg" alt="logo-celta">
+            </div>
+
+            <ul class="ul-languages">
+
+                <li class="desplegable">
+                    Español
+                    <img src="assets/icons/i-es.png" alt="Español">
+                    <i class="fa-solid fa-caret-down"></i>
+                </li>
+
+                <ul class="contenido-desplegable">
+                    <li>
+                        Galego<img src="assets/icons/i-gl.png" alt="galego">
+                    </li>
+                    <li>
+                        Inglés
+                        <img src="assets/icons/i-en.png" alt="Inglés">
+                    </li>
+                </ul>
+
+            </ul>
+
+
+        </nav>
+    </header>
+    <!-- MAIN FORMULARIO -->
+    <main>
+        <!-- CABECERA -->
+        <div class="background"></div>
+        <section class="section-form">
+            <div class="links-forms">
+                <a class="link-form1" href="">INICIAR SESIÓN</a>
+                <a class="link-form2" href="">REGISTRARME</a>
+            </div>
+
+            <!-- FORMULARIO COMPONENTE -->
+            <!-- <form action="" id="form1">
+                <div class="cabecera-form">
+                    <h1 class="title-h1">CONECTARME AHORA</h1>
+                    <a class="rrss">
+                        <p>Puedes utilizar tus redes sociales</p>
+                        <button class="btn-rrss-google">
+                            <img src="/assets/icons/icon-google+.svg" alt="google">Google</button>
+                            <p>O bien</p>
+                        </a>
+                    </div>
+
+
+                <div class="input-form">
+                    <label for="">Email</label>
+                    <input class="input-sesion" type="text" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="input-form">
+                    <label for="">Constraseña</label>
+                    <input class="input-password" type="password" placeholder="***************">
+                </div>
+                <div class="link-contraseña">
+                    <p>¿Te has olvidado tu Constraseña? <a href="">Pulsa aquí</a></p>
+                </div>
+                <button class="btn-submit" type="submit">CONECTARME AHORA</button>
+                <div class="text-footer">
+                    <p>¿Todavía no tienes cuenta propia del Celta?
+                        <a href="">Regístrate aquí</a>
+                        </p>
+                </div>
+            </form> -->
+
+
+            <!-- FORMULARIO 2 COMPONENTE -->
+            <form action="" id="form2">
+                <div class="cabecera-form">
+                    <h1 class="title-h1">¡Regístrate ahora!</h1>
+                    <a class="rrss">
+                        <p>Puedes utilizar tus redes sociales</p>
+                        <button class="btn-rrss-google">
+                            <img src="/assets/icons/icon-google+.svg" alt="google">Google</button>
+                        <p>O bien</p>
+                    </a>
+                </div>
+                <div class="input-tratamiento">
+                    <label class="label-tratamiento" for="">TRATAMIENTO</label>
+                    <input type="radio" >
+                    <label for="">Sr.</label>
+                    <input type="radio">
+                    <label for="">Sra.</label>
+                </div>
+                <div class="input-form">
+                    <label for="">Nombre</label>
+                    <input class="input-sesion" type="text" placeholder="Nombre">
+                </div>
+                <div class="input-form">
+                    <label for="">Apellido</label>
+                    <input class="input-password" type="text" placeholder="Apellido">
+                </div>
+                <div class="input-form">
+                    <label for="">Tipo de documento</label>
+                    <select name="dni" id="dni">
+                        <option value="">DNI</option>
+                        <option value="">PASAPORTE</option>
+                    </select>
+                </div>
+                <div class="input-form">
+                    <label for="">DNI/PASAPORTE</label>
+                    <input class="input-sesion" type="text" placeholder="00000000A">
+                </div>
+                <div class="input-form">
+                    <label for="">Dirección de correo electrónico</label>
+                    <input class="input-password" type="text" placeholder="ejemplo@gmail.com">
+                </div>
+                <div class="input-form">
+                    <label for="">Constraseña</label>
+                    <input class="input-password" type="text" placeholder="***************">
+                </div>
+                <div class="input-form">
+                    <label for="">Confirma tu contraseña</label>
+                    <input class="input-password" type="text" placeholder="***************">
+                </div>
+                <div class="input-form">
+                    <label for="">ID CARNET</label>
+                    <input class="input-sesion" type="text" placeholder="112245">
+                </div>
+                <div class="link-contraseña">
+                    
+                    <p><input class="input-checkbox" type="checkbox" name="" id=""><span class="span-checkbox">*</span> He leído y entendido la <a href="">Politica de Privacidad</a></p>
+                    
+                    <p><input class="input-checkbox" type="checkbox" name="" id="">Quiero recibir comunicaciones comerciales del Grupo RC Celta, autorizando la cesión de mis datos
+                        personales a sus entidades afiliadas para la presente finalidad.</p>
+                </div>
+                <button class="btn-submit" type="submit">REGISTRARME AHORA</button>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>
