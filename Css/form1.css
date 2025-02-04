@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", serif;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --color-red: #D50030;
+    --color-blue: #0A2339; 
+    --color-white: #fff;
+}
+
+
+/* FORMULARIO */
+.title-h1 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 2rem;
+}
+.cabecera-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rrss p {
+    color: rgb(136, 133, 133);
+    text-align: center;
+}
+
+.btn-rrss-google {
+    padding: 10px;
+    color: rgb(136, 133, 133);
+    background-color: var(--color-white);
+    border: 1px solid rgb(189, 189, 189);
+    margin: 1.5rem;
+    width: 150px;
+    cursor: pointer;
+}
+
+#form1 {
+    width: 100%;
+    
+}
+
+.input-form {
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+}
+
+.input-form label {
+    color: var(--color-blue);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    left: 50px;
+    top: 35px;
+}
+
+.input-sesion,
+.input-password, 
+select {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin: .5em auto;
+    display: block;
+}
+
+.link-contraseña {
+    margin: 35px;
+    color: rgb(136, 133, 133);
+
+}
+.link-contraseña a{
+    color: var(--color-blue);
+    font-weight: 700;
+}
+.btn-submit {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin: .5em auto;
+    display: block;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    border: none;
+    
+}
+.btn-submit:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.text-footer{
+    margin: 35px;
+    color: rgb(136, 133, 133);
+    color: rgb(136, 133, 133);
+    text-align: center;
+
+}
+.text-footer a{
+    color: var(--color-blue);
+    font-weight: 700;
+    
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-red);
+}

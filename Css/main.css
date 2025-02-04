@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root {
+    --color-red: #D50030;
+    --color-blue: #0A2339;
+    --color-white: #fff;
+}
+
+.background {
+    overflow: auto;
+    background: url(/assets/imagenes/backgroundCelta.jpg);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    background-size: cover;
+    z-index: -2;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    place-items: center;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 30px 0px;
+    width: 850px;
+}
+
+.nav-btn-home {
+    height: 100%;
+    align-content: center;
+}
+
+.nav-logo {
+    height: 100%;
+    align-content: center;
+}
+
+.btn-link-home {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--color-white);
+}
+
+.icono-link {
+    background-image: url('/assets/icons/arrow_prev.png');
+    background-size: 24px;
+    height: 30px;
+    width: 25px;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+
+}
+
+/* .nav-languages{
+    
+} */
+
+
+.desplegable {
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-white);
+    min-width: 170px;
+    padding: 20px;
+}
+
+.ul-languages:hover {
+    background-color: #37434A;
+
+}
+
+.ul-languages:hover .contenido-desplegable {
+    display: block;
+}
+
+.ul-languages img {
+    width: 20px;
+    margin-left: 20px;
+}
+
+.contenido-desplegable {
+    display: none;
+    position: absolute;
+    background-color: #37434A;
+    min-width: 170px;
+    place-items: center;
+    z-index: 2;
+    padding-bottom: 15px;
+    color: var(--color-white);
+}
+
+.contenido-desplegable li {
+    width: 100%;
+    text-align: start;
+    margin-left: 40px;
+    height: 50px;
+}
+
+
+.contenido-desplegable li {
+    padding-top: 20px;
+}
+
+.section-form {
+    width: 850px;
+    height: auto;
+    background-color: var(--color-white);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+}
+
+.links-forms a {
+    font-weight: 900;
+    font-style: italic;
+    padding: 1rem;
+}
+
+.link-form1 {
+    color: var(--color-blue);
+    position: relative;
+    text-decoration: none;
+}
+
+.link-form2 {
+    color: rgb(202, 201, 201);
+    position: relative;
+    text-decoration: none;
+}
+.link-form1::after,
+.link-form2::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0%;
+    height: 4px; 
+    background-color: var(--color-red);
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.link-form2:hover {
+    color: var(--color-blue);
+}
+.link-form1:hover::after,
+.link-form2:hover::after {
+    width: 50%; 
+    left: 25%;
+}
+
+
+/* FORMULARIO */
+.title-h1 {
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 900;
+    margin: 2rem;
+}
+.cabecera-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.rrss p {
+    color: rgb(136, 133, 133);
+    text-align: center;
+}
+
+.btn-rrss-google {
+    padding: 10px;
+    color: rgb(136, 133, 133);
+    background-color: var(--color-white);
+    border: 1px solid rgb(189, 189, 189);
+    margin: 1.5rem;
+    width: 150px;
+    cursor: pointer;
+}
+
+#form1 {
+    width: 100%;
+    display: none;
+}
+
+.input-form {
+    width: 100%;
+    position: relative;
+    min-height: 50px;
+}
+
+.input-form label {
+    color: var(--color-blue);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    left: 50px;
+    top: 35px;
+}
+
+.input-sesion,
+.input-password, select {
+    width: 90%;
+    height: 80px;
+    padding: 20px;
+    margin: .5em auto;
+    display: block;
+}
+
+.link-contraseña {
+    margin: 35px;
+    color: rgb(136, 133, 133);
+
+}
+.link-contraseña a{
+    color: var(--color-blue);
+    font-weight: 700;
+}
+.btn-submit {
+    width: 90%;
+    height: 80px;
+    padding: 10px;
+    margin: .5em auto;
+    display: block;
+    background-color: var(--color-red);
+    color: var(--color-white);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 900;
+    border: none;
+    
+}
+.btn-submit:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+.text-footer{
+    margin: 35px;
+    color: rgb(136, 133, 133);
+    color: rgb(136, 133, 133);
+    text-align: center;
+
+}
+.text-footer a{
+    color: var(--color-blue);
+    font-weight: 700;
+    
+}
+
+
+/* FORM 2 */
+.input-tratamiento{
+    margin: 10px;
+}
+.label-tratamiento{
+    margin-right: 20px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--color-red);
+    margin-right: 10px;
+}
+.span-checkbox{
+    font-weight: 900;
+    color: var(--color-blue);
+}
