@@ -73,13 +73,7 @@ nav {
     display: block;
     float: left;
     background-repeat: no-repeat;
-
 }
-
-/* .nav-languages{
-    
-} */
-
 
 .desplegable {
     display: block;
@@ -87,8 +81,9 @@ nav {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-white);
-    min-width: 170px;
+    min-width: 130px;
     padding: 20px;
+    
 }
 
 .ul-languages:hover {
@@ -97,7 +92,8 @@ nav {
 }
 
 .ul-languages:hover .contenido-desplegable {
-    display: block;
+    display: block; 
+    
 }
 
 .ul-languages img {
@@ -210,7 +206,7 @@ nav {
 
 #form1 {
     width: 100%;
-    display: none;
+    display: ngone;
 }
 
 .input-form {
@@ -230,10 +226,16 @@ nav {
 }
 
 .input-sesion,
-.input-password, select {
+.input-password {
     width: 90%;
     height: 80px;
     padding: 20px;
+    margin: .5em auto;
+    display: block;
+}
+select{
+    width: 95%;
+    height: 80px;
     margin: .5em auto;
     display: block;
 }

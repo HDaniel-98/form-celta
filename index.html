@@ -60,7 +60,7 @@
             </div>
 
             <!-- FORMULARIO COMPONENTE -->
-            <!-- <form action="" id="form1">
+             <!-- <form action="" id="form1">
                 <div class="cabecera-form">
                     <h1 class="title-h1">CONECTARME AHORA</h1>
                     <a class="rrss">
@@ -89,7 +89,7 @@
                         <a href="">Regístrate aquí</a>
                         </p>
                 </div>
-            </form> -->
+            </form>  -->
 
 
             <!-- FORMULARIO 2 COMPONENTE -->
@@ -112,44 +112,48 @@
                 </div>
                 <div class="input-form">
                     <label for="">Nombre</label>
-                    <input class="input-sesion" type="text" placeholder="Nombre">
+                    <input class="input-sesion" type="text" placeholder="Nombre" required>
                 </div>
                 <div class="input-form">
                     <label for="">Apellido</label>
-                    <input class="input-password" type="text" placeholder="Apellido">
+                    <input class="input-password" type="text" placeholder="Apellido" required>
                 </div>
                 <div class="input-form">
                     <label for="">Tipo de documento</label>
-                    <select name="dni" id="dni">
+                    <select name="dni" id="dni" required>
                         <option value="">DNI</option>
                         <option value="">PASAPORTE</option>
                     </select>
                 </div>
                 <div class="input-form">
                     <label for="">DNI/PASAPORTE</label>
-                    <input class="input-sesion" type="text" placeholder="00000000A">
+                    <input class="input-sesion" type="text" placeholder="00000000A" required>
                 </div>
                 <div class="input-form">
                     <label for="">Dirección de correo electrónico</label>
-                    <input class="input-password" type="text" placeholder="ejemplo@gmail.com">
+                    <input class="input-password" type="text" placeholder="ejemplo@gmail.com" required>
                 </div>
                 <div class="input-form">
                     <label for="">Constraseña</label>
-                    <input class="input-password" type="text" placeholder="***************">
+                    <input class="input-password" type="password" placeholder="***************" required>
                 </div>
                 <div class="input-form">
                     <label for="">Confirma tu contraseña</label>
-                    <input class="input-password" type="text" placeholder="***************">
+                    <input class="input-password" type="password" placeholder="***************" required>
+                </div>
+                <div class="input-form">
+                    <label for="">Fecha de nacimiento</label>
+                    <input class="input-password" type="date" placeholder="dd/mm/aaaa" required>
                 </div>
                 <div class="input-form">
                     <label for="">ID CARNET</label>
-                    <input class="input-sesion" type="text" placeholder="112245">
+                    <input class="input-sesion" type="text" placeholder="112245" required>
                 </div>
                 <div class="link-contraseña">
                     
-                    <p><input class="input-checkbox" type="checkbox" name="" id=""><span class="span-checkbox">*</span> He leído y entendido la <a href="">Politica de Privacidad</a></p>
+                    <p><input class="input-checkbox" type="checkbox" name="" id="" required><span class="span-checkbox">*</span> He leído y entendido la <a href="">Politica de Privacidad</a></p>
                     
-                    <p><input class="input-checkbox" type="checkbox" name="" id="">Quiero recibir comunicaciones comerciales del Grupo RC Celta, autorizando la cesión de mis datos
+                    <p><input class="input-checkbox" type="checkbox" name="" id="" required>recibir comunicaciones comerciales del Grupo RC Celta, autorizando la cesión de mis datos
                         personales a sus entidades afiliadas para la presente finalidad.</p>
                 </div>
                 <button class="btn-submit" type="submit">REGISTRARME AHORA</button>
